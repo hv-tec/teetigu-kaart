@@ -16,7 +16,14 @@ Disain valmis ja heaks kiidetud (4 rolli: oponent/mentor/coach/uurija sisend põ
   (0 e-posti/telefoni-leket, kontrollitud). Lahendab tühja-kaardi cold-start'i.
 - Täielik disain: `~/.claude/plans/fluffy-leaping-bengio.md`.
 
+**GitHub:** https://github.com/hv-tec/teetigu-kaart (avalik, MIT). Lovable saab siia app-koodi pushida.
+
 **Järgmine samm = Heikki teeb Supabase + OAuth setupi, siis kleebib prompti Lovable'i.**
+
+**Supabase-projekt (soovitus):** loo UUS tasuta Supabase-org + free-projekt `teetigu-kaart` — mitte
+äri-orgi (hv-tec) alla. Põhjus: avalikult kirjutatav tabel (RLS blast-radius), eraldi `auth.users`,
+erinev andmekaitse-piir (mittetulunduslik vs äri). Free tier katab MVP + seemet kergelt, ja on tasuta.
+Kiiruse eelistamisel saab ka olemasolevasse projekti panna — Heikki otsus.
 
 ## Otsused (lukustatud)
 | Teema | Otsus |

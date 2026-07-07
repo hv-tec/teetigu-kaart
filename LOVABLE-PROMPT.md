@@ -40,7 +40,7 @@ create policy "fb_select_own" on public.feedback for select using (auth.uid() = 
 
 AUTH: Supabase social login with Google and Facebook buttons. The map is publicly viewable without login. Only adding a report requires login — gate the "Lisa teade" flow behind auth and prompt sign-in there. On the login screen show a short Estonian privacy note with a link to the privacy page: "Sisse logides nõustud, et sinu teate ligikaudne asukoht on avalikul kaardil nähtav. Loe lähemalt: Privaatsus." (link → /privaatsus).
 
-PRIVACY PAGE: add a route /privaatsus rendering the static Estonian privacy policy below (headings + paragraphs, readable, max-width text column). Link to it from the login screen and from a small footer/menu link reachable from the map. The footer should read: "Kogukonnaprojekt · avatud lähtekood · Privaatsus" (with "avatud lähtekood" linking to [GITHUBI LINK] and "Privaatsus" linking to /privaatsus). This page must be publicly accessible without login (Meta app review requires a public privacy policy URL). Content verbatim:
+PRIVACY PAGE: add a route /privaatsus rendering the static Estonian privacy policy below (headings + paragraphs, readable, max-width text column). Link to it from the login screen and from a small footer/menu link reachable from the map. The footer should read: "Kogukonnaprojekt · avatud lähtekood · Privaatsus" (with "avatud lähtekood" linking to https://github.com/hv-tec/teetigu-kaart and "Privaatsus" linking to /privaatsus). This page must be publicly accessible without login (Meta app review requires a public privacy policy URL). Content verbatim:
 
   # Privaatsuspoliitika — Teetigu-kaart
 
@@ -52,7 +52,7 @@ PRIVACY PAGE: add a route /privaatsus rendering the static Estonian privacy poli
 
   ## Mittetulunduslik kogukonnaprojekt
   See on kogukonna hüvanguks tehtud projekt, millel puudub äriline eesmärk. Me ei teeni rakendusega
-  tulu ega müü andmeid. Lähtekood on avalikult saadaval Gitis ([GITHUBI LINK]) ja vabalt kasutatav.
+  tulu ega müü andmeid. Lähtekood on avalikult saadaval Gitis (https://github.com/hv-tec/teetigu-kaart) ja vabalt kasutatav.
 
   ## Milliseid andmeid kogume
   - **Konto**: sisse logides Google või Facebook kaudu saame su nime ja e-posti aadressi (Supabase Auth kaudu).
